@@ -1,0 +1,17 @@
+Iniciar um projeto no Django:
+django-admin startproject "NomeDoProjeto"
+
+Criar um app dentro do projeto:
+py -m django startapp "NomeDoApp"
+
+Iniciar servidor:
+python manage.py runserver
+
+Criar um Superusuário:
+python manage.py createsuperuser
+
+Verificar as alterações feitas no sistema:
+python manage.py makemigrations
+
+Fazer as aterações no sistemas:
+python manage.py migrate
