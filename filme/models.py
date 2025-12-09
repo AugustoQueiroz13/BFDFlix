@@ -3,21 +3,22 @@ from django.utils import timezone
 
 # Create your models here.
 
-LISTA_CATEGORIAS = (
-    ("aulas", "Aulas"),
-    ("provas", "Provas"),
-    ("ciclos", "Ciclos"),
-    ("outros", "Outros"),
-)
 
+LISTA_CATEGORIAS = (
+    ("AULA", "Aula"),
+    ("PROGRAMACAO", "Programação"),
+    ("CURSOS", "Outros"),
+    ("OUTROS", "Outros"),
+    ("TERRORPSI", "Terror Psicológico"),
+)
 #Criar o filme
 class Filme(models.Model):
     titulo = models.CharField(max_length=100)
     thumb = models.ImageField(upload_to='thumb_filmes')
     descricao = models.TextField(max_length=1000)
-    categoria = models.CharField(max_length=15, choices=LISTA_CATEGORIAS)
-    visualizacoes = models.IntegerField(default=0)
-    data_cricao = models.DateTimeField(default=timezone.now)
+    categoria = models.CharField(max_length=20, choices=LISTA_CATEGORIAS)
+    visualizacoes = models.IntegerField(default=0)    
+    lancamento = models.DateTimeField(default=timezone.now)
     
-    def __str__ (self):
-        return self.titulo
+    def __str__(self):
+        return self.titulo  
