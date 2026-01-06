@@ -1,9 +1,10 @@
-<nav class="w-full flex justify-between items-center py-3 px-4 fixed z-50">
+{% load static %}
+<nav class="w-full flex justify-between items-center py-3 px-4 fixed z-50 top-0 left-0">
 
     <!-- Comentário -->
     <div class="w-6/12">
         <a href="#">
-            <img class="w-5/12" src="">        
+            <img class="w-42" src="{% static 'images/logo_main.png' %}" alt="Logo BFDFlix">        
         </a>
     </div>    
 
@@ -14,18 +15,14 @@
             </form>
         </div>
         <div class="mr-2">
-            <a href="#">
-                <button class="bg-red-300 text-white py-1 px-3 rounded-md">
-                    Login
-                </button>
+            <a href="#" type="button" class="bg-red-600 text-white py-1 px-3 rounded-md transition duration-300 hover:bg-red-700">
+                Login
             </a>
         </div>
         <div class="mr-2">
-            <a href="#">
-                <button class="bg-red-600 text-white py-1 px-3 rounded-md">
-                    Editar Perfil
+            <a href="#" type="button" class="bg-red-600 text-white py-1 px-3 rounded-md transition duration-300 hover:bg-red-700">
+                Editar Perfil
             </a>
         </div>
     </div>
-
 </nav>
