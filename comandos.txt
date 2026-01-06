@@ -17,3 +17,5 @@ Fazer as aterações no sistemas:
 python manage.py migrate
 
 Senha do Superusuário: user1234
+
+Usuário: bfd
